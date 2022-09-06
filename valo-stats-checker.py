@@ -63,11 +63,9 @@ def highest_headshots(stats_dict):
 # VALO GOOEY STARTS HERE
 
 # Summary Valo Stats Func
-def sum_valo_stats(stats_dict): # ADD IN STATS_DICT AS PARAMETER
+def sum_valo_stats(stats_dict): 
     kd_map_agent = highest_kd(stats_dict)
     hs_map_agent = highest_headshots(stats_dict)
-    # kd_map_agent = [5.0, "Ascent", "Phoenix"] # DELETE LATER
-    # hs_map_agent = ["100%", "Bind", "Omen"] # DELETE LATER
     pg.theme("LightGreen3") 
     center_text = [
         [pg.Text("Summary from your recent comp games...\n", font=(15))],
@@ -98,7 +96,7 @@ def sum_valo_stats(stats_dict): # ADD IN STATS_DICT AS PARAMETER
 
 
 # Table of Matches Func
-def match_table(stats_dict): #probs takes in stats dict
+def match_table(stats_dict): 
     match_info_arr = []
     for i in range(5):
         match_stats = [
@@ -109,12 +107,6 @@ def match_table(stats_dict): #probs takes in stats dict
             stats_dict[i]["kda"]["assists"]
         ]
         match_info_arr.append(match_stats)
-    
-    # print(match_info_arr)
-
-    # match_info_arr = [
-    #     ["Ascent", "Phoenix", "0", "18", "2"]
-    # ]
 
     headings = ["Map", "Agent", "Kills", "Deaths", "Assists"]
 
@@ -250,7 +242,7 @@ def main():
             region = values[2]
             stats_dict = valo_stats(region, user, tagline)
             window.close()
-            sum_valo_stats(stats_dict) # ADD IN PARAMETERS LATER (stats_dict)
+            sum_valo_stats(stats_dict) 
 
     # Close window
     window.close()
