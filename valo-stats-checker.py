@@ -197,14 +197,11 @@ def roast_func(match):
     if match["agent"] == "Phoenix" or match["agent"] == "Breach":
         roast_arr.append("You know you're supposed to flash the ENEMY team right?")
     if match["agent"] == "Chamber":
-        roast_arr.append("You want to play? Let's play (nerd emoji)")
+        roast_arr.append("You want to play? Let's play.")
     if match["agent"] == "Jett":
         roast_arr.append("No pocket sage?")
     roast_arr.append("Please go touch some grass.")
-    roast_arr.append("No bitches? :3")
-    roast_arr.append("'Pushing C?' How about you C some bitches?")
     roast_arr.append("Are you an ION phantom? 'Cause ION want you.")
-    roast_arr.append("Literally trolling (skull emoji x7)")
     roast_arr.append("That's crazy.")
 
     roast = random.choice(roast_arr)
